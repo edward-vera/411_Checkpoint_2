@@ -1,44 +1,49 @@
 {
-    "name": "instructor_411_wk5_day1_mapstatetoprops",
+    "name": "checkpoint_2",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-      "@emotion/react": "^11.9.0",
-      "@emotion/styled": "^11.8.1",
-      "@mui/icons-material": "^5.8.2",
-      "@mui/material": "^5.8.2",
-      "i": "^0.3.7",
-      "npm": "^8.10.0",
-      "react": "^18.1.0",
-      "react-dom": "^18.1.0",
-      "react-minimal-pie-chart": "^8.4.0",
-      "react-redux": "^7.1.0",
-      "react-router": "^5.0.1",
-      "react-router-dom": "^5.0.1",
-      "react-scripts": "^5.0.1",
-      "redux": "^4.0.4",
-      "redux-thunk": "^2.4.2",
-      "material-ui-popup-state": "^4.1.0"
+        "@emotion/react": "^11.9.0",
+        "@emotion/styled": "^11.8.1",
+        "@mui/icons-material": "^5.8.2",
+        "@mui/material": "^5.8.2",
+        "@react-google-maps/api": "^2.17.1",
+        "google-map-react": "^2.2.0",
+        "i": "^0.3.7",
+        "material-ui-popup-state": "^4.1.0",
+        "npm": "^8.10.0",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0",
+        "react-minimal-pie-chart": "^8.4.0",
+        "react-redux": "^7.1.0",
+        "react-router": "^5.0.1",
+        "react-router-dom": "^6.4.5",
+        "react-scripts": "^5.0.1",
+        "redux": "^4.0.4",
+        "redux-thunk": "^2.4.2"
     },
     "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "test": "react-scripts test",
-      "eject": "react-scripts eject"
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
     },
     "eslintConfig": {
-      "extends": "react-app"
+        "extends": "react-app"
     },
     "browserslist": {
-      "production": [
-        ">0.2%",
-        "not dead",
-        "not op_mini all"
-      ],
-      "development": [
-        "last 1 chrome version",
-        "last 1 firefox version",
-        "last 1 safari version"
-      ]
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "web-vitals": "^3.1.0"
     }
-  }
+}

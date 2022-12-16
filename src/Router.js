@@ -1,7 +1,8 @@
 import React from 'react';
-import { Route, Navigate } from 'react-router-dom';
-import Home from './components/Home'
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Listings from './containers/Listings'
 import Login from './components/Login'
+import About from './containers/About'
 import cookie from 'cookie'
 
 
@@ -23,11 +24,12 @@ const ProtectedRoute = (props) => {
 
 const Router = () => {
     return(
-        <Route>
-            <Route path="/" element={<Home />}/>
+        <Routes>
+            <Route path="/" element={<Listings />}/>
             <Route path="/login" element={<Login />}/>
+            <Route path="/about/:id" element={<About />}/>
             <Route/>
-        </Route>
+        </Routes>
     )
 }
 

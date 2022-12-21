@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Listings from './containers/Listings'
 import Login from './components/Login'
 import About from './containers/About'
+import Add from './containers/Add'
 import cookie from 'cookie'
 
 
@@ -28,6 +29,7 @@ const Router = () => {
             <Route path="/" element={<Listings />}/>
             <Route path="/login" element={<Login />}/>
             <Route path="/about/:id" element={<About />}/>
+            <Route path="/add" element={<Add />}/>
             <Route/>
         </Routes>
     )

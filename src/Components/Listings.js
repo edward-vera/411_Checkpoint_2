@@ -10,16 +10,11 @@ import {
     Typography
 } from '@mui/material'
 import { 
-    Link, 
+    Link,
     useParams 
 } from 'react-router-dom'
 
-const Listings = (props) => {
-    const {id} = useParams();
-
-    const list = props.lists.find((list) => list.id === +id);
-    console.log(list);
-
+const Listings = (props) => { 
     return (
         <div className="main-listings">
                 <Container>
@@ -41,7 +36,7 @@ const Listings = (props) => {
                                                     to={`/about/${lists.id}`}
                                                     component="button"
                                                     variant="header1"
-                                                    style={{ color: 'black'}}>
+                                                    style={{ color: 'black', borderBottom: '1px solid black'}}>
                                                     {lists["Name"]}
                                                 </Link>
                                                 </Typography>

@@ -14,11 +14,10 @@ const Navigation = () => {
                         <Link to="/">Listings</Link>
                     </li>
                     <li className="nav-list-item">
-                        <Link to="/login">Login</Link>
+                        <Link to="/Add">Add</Link>
                     </li>
                     <li className="nav-list-item">
-                        {/* Add Link here */}
-                        <Link to="/about/1">About</Link>
+                        <Link to="/login">Login</Link>
                     </li>
                 </ul>
             </Toolbar>

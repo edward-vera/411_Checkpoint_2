@@ -1,8 +1,5 @@
 const state = {
-    user: {
-        username: 'test-user-1',
-        email: 'test-user@example.com'
-    },
+    user: [],
     lists: [
         {
             "id" : 1,

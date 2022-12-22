@@ -8,9 +8,9 @@ const lists = (state = [], action) => {
             return[...state, action.value];
 
         case "REMOVE_LISTING":
-            const copy = [...state];
-            copy.splice(action.value, 1);
-            return copy;
+            const listing = [...state];
+            listing.splice(action.value, 1);
+            return listing;
         default:
             return state;
     }

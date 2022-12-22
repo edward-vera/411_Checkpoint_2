@@ -5,7 +5,7 @@ export const addListing = (newListing) => {
     }
 }
 
-export const removeListing = (index) => {
+export const removeListings = (index) => {
     return {
         type: 'REMOVE_LISTING',
         value: index

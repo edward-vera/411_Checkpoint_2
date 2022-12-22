@@ -9,9 +9,9 @@ import {
     TableRow,
     Typography
 } from '@mui/material'
+import DeleteIcon from '@mui/icons-material/Delete'
 import { 
     Link,
-    useParams 
 } from 'react-router-dom'
 
 const Listings = (props) => { 
@@ -44,6 +44,19 @@ const Listings = (props) => {
                                             <TableCell  scope="row">{lists["Description"]}</TableCell>
                                             <TableCell  scope="row">{lists["Hours"]}</TableCell>
                                             <TableCell  scope="row">{lists["Address"]}</TableCell>
+                                            <TableCell>
+                                            <DeleteIcon
+                                                onClick={() => props.removeListings(idx)}
+                                                className='icon text-red'
+                                                color='warning'
+                                                sx={{
+                                                  '&:hover': {
+                                                    backgroundColor: 'transparent',
+                                                    cursor: 'pointer',
+                                                  },
+                                                }} 
+                                                />
+                                            </TableCell>
                                         </TableRow>
                                     )})}
                                 </TableBody>

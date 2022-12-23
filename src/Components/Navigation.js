@@ -1,8 +1,18 @@
 import React from 'react'
-import { AppBar, Toolbar, Typography } from '@mui/material'
-import { Link } from "react-router-dom";
+import { AppBar, ThemeProvider, Toolbar, Typography } from '@mui/material'
+import { Link, useNavigate } from "react-router-dom";
+import LoginBar from '../containers/LoginBar';
+import cookie from 'cookie';
+
+const checkAuth = () => {
+    const cookies = cookie.parse(document.cookie);
+    return cookies['loggedIn'] ? true : false;
+  };
+
 
 const Navigation = () => {
+    const navigate = useNavigate();
+
     return (
         <AppBar position="relative">
             <Toolbar>
@@ -22,7 +32,7 @@ const Navigation = () => {
                 </ul>
             </Toolbar>
         </AppBar>
-    )
-}
+    );
+};
 
 export default Navigation;

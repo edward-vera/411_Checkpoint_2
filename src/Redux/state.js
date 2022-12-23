@@ -1,5 +1,5 @@
 const state = {
-    user: [],
+    user: [ null ],
     lists: [
         {
             "id" : 1,
@@ -37,7 +37,6 @@ const state = {
             "Address" : "701 Congress Ave Austin, Texas 78701" 
         }
     ],
-    // restaurant : []
 }
 
 export default state;

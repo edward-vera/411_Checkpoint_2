@@ -22,9 +22,7 @@ const Login = () => {
 
   const login = (e) => {
     e.preventDefault();
-
     // SEND POST REQ TO SERVER FOR USER
-
     // set cookie here
     document.cookie = "loggedin=true;max-age=60*1000";
     // set loggedIn = true and max-age = 60*1000 (one minute)

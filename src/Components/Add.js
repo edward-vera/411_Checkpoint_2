@@ -10,7 +10,6 @@ import Map from '../maps'
 import '../App'
 
 const AddLists = (props) => {
-    console.log(props);
 
     const navigate = useNavigate();
 

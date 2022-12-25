@@ -58,8 +58,8 @@ const AddLists = (props) => {
         return (
             <>
                 <DialogTitle>Add New Listing</DialogTitle>
-                <Box sx={{display: 'flex', marginLeft: '5px'}}>
-                    <Box>
+                <Box sx={{display: 'flex', marginLeft: '5px', gap: '1em'}}>
+                    <Box sx={{width:'50%', maxWidth: '520px'}}>
                     <TextField 
                     required
                     autoFocus

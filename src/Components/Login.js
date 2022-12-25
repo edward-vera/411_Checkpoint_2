@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TextField, Button, Container } from "@mui/material";
 
-const Login = () => {
+const Login = (props) => {
   const navigate = useNavigate();
 
-  const [state, setState] = useState({
+  const [user, setUser] = useState({
     username: "",
     password: "",
   });
 
   const handleTextChange = (e) => {
     const { name, value } = e.target;
-    setState((prevState) => {
+    setUser((prevState) => {
       return {
         ...prevState,
         [name]: value,
@@ -22,12 +22,8 @@ const Login = () => {
 
   const login = (e) => {
     e.preventDefault();
-    // SEND POST REQ TO SERVER FOR USER
-    // set cookie here
-    document.cookie = "loggedin=true;max-age=60*1000";
-    // set loggedIn = true and max-age = 60*1000 (one minute)
-
-    navigate("/");
+    document.cookie = 'loggedIn=true;max-age=60*1000';
+    navigate('/');
   };
 
   return (
@@ -37,7 +33,7 @@ const Login = () => {
           <TextField
             required
             onChange={handleTextChange}
-            value={state.username}
+            value={user.username}
             name="username"
             label="Username"
             type="text"
@@ -45,7 +41,7 @@ const Login = () => {
           <TextField
             required
             onChange={handleTextChange}
-            value={state.password}
+            value={user.password}
             name="password"
             label="Password"
             type="password"

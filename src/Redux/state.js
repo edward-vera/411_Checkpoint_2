@@ -1,5 +1,8 @@
 const state = {
-    user: [ null ],
+    user: [ {
+        "username" : 'admin',
+        "password" : 'password'
+} ],
     lists: [
         {
             "id" : 1,
@@ -37,6 +40,7 @@ const state = {
             "Address" : "701 Congress Ave Austin, Texas 78701" 
         }
     ],
-}
+    // coordinates: [],
+};
 
 export default state;

@@ -13,6 +13,12 @@ import DeleteIcon from '@mui/icons-material/Delete'
 import { 
     Link,
 } from 'react-router-dom'
+import cookie from 'cookie';
+
+const checkAuth = () => {
+    const cookies = cookie.parse(document.cookie);
+    return cookies['loggedIn'] ? true : false;
+  };
 
 const Listings = (props) => { 
     return (
@@ -25,6 +31,7 @@ const Listings = (props) => {
                                         <TableCell>Description</TableCell>
                                         <TableCell>Hours</TableCell>
                                         <TableCell>Address</TableCell>
+                                        {checkAuth() ? <TableCell>Delete</TableCell> : null}
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -45,7 +52,7 @@ const Listings = (props) => {
                                             <TableCell  scope="row">{lists["Hours"]}</TableCell>
                                             <TableCell  scope="row">{lists["Address"]}</TableCell>
                                             <TableCell>
-                                            <DeleteIcon
+                                            {checkAuth() ? <DeleteIcon
                                                 onClick={() => props.removeListings(idx)}
                                                 className='icon text-red'
                                                 color='warning'
@@ -55,7 +62,7 @@ const Listings = (props) => {
                                                     cursor: 'pointer',
                                                   },
                                                 }} 
-                                                />
+                                                /> : null}
                                             </TableCell>
                                         </TableRow>
                                     )})}

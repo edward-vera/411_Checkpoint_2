@@ -26,9 +26,7 @@ const AddLists = (props) => {
     });
     
         const handleTextChange = (e) => {
-        
             const { name, value } = e.target;
-
             setLists((prevState) => {
                 return {
                     ...prevState,

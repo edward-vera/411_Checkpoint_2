@@ -4,7 +4,8 @@ import { addListing } from '../redux/actions'
 
 const mapStateToProps = (state) => {
     return{
-        lists: state.lists
+        lists: state.lists,
+        dialogOpen: state.dialogOpen,
     }
 }
 

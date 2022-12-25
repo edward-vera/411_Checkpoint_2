@@ -7,4 +7,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, null)(LoginBar);
+export default connect(mapStateToProps)(LoginBar);
